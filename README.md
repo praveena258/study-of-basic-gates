@@ -63,10 +63,21 @@ Y= A⊕B
 
 
 **PROGRAM**
+module de(a, b, n, an, o, na, no, xo, xn);
+    input a, b;
+    output n, an, o, na, no, xo, xn;
+    assign n = ~a;
+    assign an = a & b;
+    assign o = a | b;
+    assign na = ~(a & b);
+    assign no = ~(a | b);
+    assign xo = a ^ b;
+    assign xn = ~(a ^ b);
+endmodule
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by: RegisterNumber: 
+ Developed by: Praveena D RegisterNumber: 24003392
  
 **Logic symbol & Truthtable**
 ![Screenshot 2024-11-28 135658](https://github.com/user-attachments/assets/cbd03caa-2d53-4bf9-befc-bc8925f13639)
